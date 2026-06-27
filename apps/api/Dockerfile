@@ -16,6 +16,7 @@ WORKDIR /app
 COPY apps/api ./apps/api
 COPY packages ./packages
 WORKDIR /app/apps/api
+RUN pnpm exec prisma generate
 RUN pnpm run build
 
 # ---- runner ----
