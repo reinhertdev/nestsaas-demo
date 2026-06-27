@@ -1,0 +1,47 @@
+# dependencies
+node_modules/
+
+# build outputs
+.next/
+dist/
+.turbo/
+
+# environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# debug
+npm-debug.log*
+pnpm-debug.log*
+
+# test
+coverage/
+
+generated/
+.claude/
+knight_helmet_icon.png
+
+# dev-only docs
+PROGRESS.md
+CLAUDE.md
+apps/web/CLAUDE.md
+apps/web/AGENTS.md
+
+*.tsbuildinfo
+
+# CDK
+infra/cdk.out/
+infra/dist/
+infra/node_modules/
