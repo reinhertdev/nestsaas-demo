@@ -29,6 +29,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Generate Prisma client
+        run: pnpm --filter @repo/api exec prisma generate
+        env:
+          DATABASE_URL: postgresql://user:password@localhost:5432/db
+
       - name: Type check API
         run: pnpm --filter @repo/api exec tsc --noEmit
 
